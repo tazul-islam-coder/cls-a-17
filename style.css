@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1100px;
+    margin: auto;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+a{
+    text-decoration: none;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* header part */
+.header{
+    background-color: #000000;
+    padding: 15px 0;
+}
+.header-lt{
+    width: 30%;
+}
+.header-lt img {
+    width: 120px;
+}
+.header-rt {
+    width: 70%;
+    
+}
+
+.menu ul li {
+    display: inline-block;
+    position: relative;
+    padding: 0px 20px;
+}
+.menu ul li a {
+    color: #ddd;
+    font-size: 23px;
+    line-height: 80px;
+    display: inline-block;
+    /* padding: 0px 20px; */
+    /* margin: 0px 15px; */
+}
+.menu ul li a::before{
+    content: "";
+    width: 0;
+    height: 3%;
+    position: absolute;
+    left: 18%;
+    bottom: 25%;
+    background-color: white;
+}
+.menu ul li a:hover::before{
+    width: 60%;
+}
+
+.menu ul li ul{
+    position: absolute;
+    width: 250px;
+    background-color: black;
+    border-top: 2px solid white;
+    margin-top: 17px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    display: inline-block;
+}
+.menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+.menu ul li ul li{
+    display: block;
+    margin-top: 0px;
+    
+}
+
+.menu ul li ul li a {
+    display: block;
+    text-align: left;
+    
+}
+.menu ul li ul li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    
+}
+
+
+
+/* banner part */
+.banner{
+    background-image: url(./image/banner.jpg);
+    background-position:top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 280px 0;
+}
+.banner h1 {
+    font-size: 55px;
+    font-weight: 900;
+}
+.banner h3 {
+    font-size: 22px;
+    padding: 20px 0;
+}
+button .btn-1{   
+    padding: 15px 30px;
+    font-weight: 800;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+button .btn-1:hover{
+    background-color: white;
+    color: black;
+}
+button .btn-2{  
+    padding: 15px 30px;
+    font-weight: 800;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+button .btn-2:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+/* about section */
+
+.about{
+    background-color: #87a471;
+    padding-bottom: 60px;
+}
+.about h1 {
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 50px;
+    
+    
+}
+.text-about {
+    width: 60%;
+    margin-top: 121px;
+    font-size: 17px;
+    color: #ddd;
+}
+.text-img {
+    width: 40%;
+    
+}
+.text-img img {
+    width: 350px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+
+
+
+/* activiti section */
+.activities{
+    background-color: #606a64;
+    padding-bottom: 50px;
+}
+.activities-text{
+    text-align: center;
+    color: #ddd;
+}
+.activities-text h1 {
+    font-size: 50px;
+    padding-top: 50px;
+    text-shadow: 2px 2px 4px #ddd;
+}
+.activities-text h2 {
+    font-size: 40px;
+    padding: 25px 0;
+}
+.activities-text p {
+    width: 775px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+hr {
+    width: 262px;
+    margin: auto;
+    border: 2px solid #ddd;
+}
+
+
+
+.activities-rule {
+    width: 30%;
+    background-color: #fff;
+    margin: 0 18px;
+    border-radius: 10px;
+    height: 200px;
+}
+.icon img {
+    padding: 15px;
+    padding-bottom: 110px;
+}
+.icon-text h3 {
+    padding: 20px 0;
+    font-size: 30px;
+}
+.icon-text p {
+    padding-right: 20px;
+    color: grey;
+}
+
+
+
+/* letest work */
+.latest-work{
+    background-color: #87a471;
+}
+.latest-work h3 {
+    padding-top: 100px;
+    font-size: 40px;
+    color: #ddd;
+    padding-bottom: 22px;
+    text-align: center;
+}
+.latest-work p {
+    color: #ddd;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 17px;
+}
+.first-work {
+    margin-top: 60px;
+}
+.first-work .blue{
+    color: rgb(41, 41, 131);
+    font-weight: bold;
+}
+.first-img{
+    width: 47%;
+    border: 1px solid #ddd;
+}
+.first-img img {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.second-img{
+    width: 47%;
+    border: 1px solid #ddd;
+}
+.second-img img{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.last-work {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.last-work all-img{
+    width: 23%;
+}
+.last-work .all-img img {
+    width: 231px;
+    margin: 0 22px;
+}
+
+
+
+/* team-members */
+
+.team-members{
+    background-color: #5b9776;
+    text-align: center;
+}
+.team-members h1{
+    text-align: center;
+    color: #ddd;
+    padding-top: 50px;
+}
+.team-mates{
+    padding: 40px 0;
+    width: 30%;
+    
+}
+
+
+.team-mates ul li{
+    display: inline-block;
+}
+.team-mates ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 5px;
+    color: white;
+    font-size: 40px;
+    transition: .5s;
+}
+.team-mates ul li a:hover{
+    color: #445e77;
+}
+.team-mates-img ul{
+    text-align: center;
+    
+}
+.team-mates-img img{
+    max-width:300px;
+}
+
+/* sub-footer */
+.sub-footer{
+    background-color: #606a64;
+    padding: 100px 0;
+    text-align: center;
+    color: #ddd;
+}
+.sub-footer h1 {
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+.sub-footer p {
+    width: 700px;
+    margin: auto;
+    font-size: 20px;
+    padding-bottom: 28px;
+}
+.f-btn {
+    padding: 13px 35px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    background-color: #00bc9c;
+    color: #fff;
+    transition: .5s;
+}
+.f-btn:hover{
+    background-color: #445e77;
+    
+}
+
+
+
+
+/* footer */
+footer{
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 0;
+}
